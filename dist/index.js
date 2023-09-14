@@ -38,4 +38,5 @@ let textBox = {
     drag: () => { },
     resize: () => { }
 };
+let quantity = 100;
 //# sourceMappingURL=index.js.map
