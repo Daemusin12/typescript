@@ -24,11 +24,13 @@ function calculateTax(income: number, taxYear = 2022): number {
 
 calculateTax(10_000)
 
-let employee: { 
+type Employee = {
     readonly id: number,
     name: string,
     retire: (date: Date) => void
-} = { 
+}
+
+let employee: Employee = {  
     id: 1, 
     name: 'Leonel',
     retire: (date: Date) => {
@@ -36,3 +38,14 @@ let employee: {
     } 
 };
 employee.name = 'Leonel'
+
+function kgToLbs(weight: number | string): number {
+    // Narrowing
+    if (typeof weight === 'number')
+        return weight * 2.2;
+    else 
+        return parseInt(weight) * 2.2;
+}
+
+kgToLbs(10);
+kgToLbs('10kg');
