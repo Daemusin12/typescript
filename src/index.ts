@@ -9,3 +9,5 @@ function render(document: any) {
 
 let numbers: number[] = [1, 2, 3]
 numbers.forEach(n => n.toExponential)
+
+let user: [number, string, Boolean, number] = [1, 'Leonel', true, 0]
