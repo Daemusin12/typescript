@@ -9,4 +9,7 @@ function render(document) {
 let numbers = [1, 2, 3];
 numbers.forEach(n => n.toExponential);
 let user = [1, 'Leonel', true, 0];
+;
+let mySize = 2;
+console.log(mySize);
 //# sourceMappingURL=index.js.map

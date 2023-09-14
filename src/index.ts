@@ -11,3 +11,7 @@ let numbers: number[] = [1, 2, 3]
 numbers.forEach(n => n.toExponential)
 
 let user: [number, string, Boolean, number] = [1, 'Leonel', true, 0]
+
+const enum Size { Small = 1, Medium, Large }; // pag const mas optimize yung js code
+let mySize: Size = Size.Medium;
+console.log(mySize);
